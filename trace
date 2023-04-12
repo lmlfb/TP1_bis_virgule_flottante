@@ -1,0 +1,10 @@
+#! /bin/sh
+
+# shell script pour compiler, executer et tracer
+
+make
+./chute_vf > chute.data
+gnuplot chute.gplot -persist
+
+exit 0
+

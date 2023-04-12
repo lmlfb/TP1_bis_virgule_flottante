@@ -1,0 +1,9 @@
+# Voir DocGnuplot.pdf pour plus d'info !!
+
+plot [0:400] [-600:0] "chute.data" using ($1/1000):($2/1000)  title "hauteur" with lines
+replot "chute.data" using ($1/1000):($3/1000)  title "vitesse" with lines
+
+
+
+
+
