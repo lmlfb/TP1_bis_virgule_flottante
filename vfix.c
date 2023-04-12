@@ -3,10 +3,7 @@
 #include <stdint.h>
 #include <math.h>
 #include "vfix.h"
-/* on choisi un type d'entier pour coder notre virgule fixe */
-typedef int32_t vfix; /* a ajuster si besoin */
 
-#define UNITE 100000  /* a ajuster si besoin */
 
 vfix valeur(int part_ent, int part_decim) {
     return part_ent * UNITE + part_decim;

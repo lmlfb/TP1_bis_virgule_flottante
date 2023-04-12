@@ -3,7 +3,8 @@
 # shell script pour compiler, executer et tracer
 
 make
-./chute_vf > chute.data
+./chute_vf > chuteVF.data
+./chute_fp > chuteFP.data
 gnuplot chute.gplot -persist
 
 exit 0

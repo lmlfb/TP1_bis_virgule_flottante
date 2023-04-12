@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "vfix.h"
 
 int main(int N, char *P[])
 {
@@ -16,7 +17,7 @@ float dt=0.1, t, dx, dv;
   for (t=0.; t<(10.+dt); t+=dt) { /* on enregistre pendant 10 s */
     dv=g*dt; dx=v*dt;
     v=v+dv; x=x+dx;
-    printf("%f %f %f\n",t,x,v);
+    printf("%f %f %f\n",t*UNITE,x*UNITE,v*UNITE);
   }
   return 0;
 }
