@@ -23,7 +23,6 @@ int main(int N, char *P[])
         return 0;
 #endif
     }
-
     for (t = 0; t < valeur(10, (int)dt); t = somme(t, dt)) { /* on enregistre pendant 10 s */
         dv = produit(g, dt);
         dx = produit(v, dt);

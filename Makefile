@@ -14,5 +14,5 @@ chute_vf.o : chute_vf.c
 	cc -c chute_vf.c
 
 clean :
-	rm -f chute_fp chute_vf chute.data *.o
+	rm -f chute_fp chute_vf *.data *.o
 
